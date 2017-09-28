@@ -1,0 +1,9 @@
+<h1> Movies </h1>
+
+<ul *ngFor="let movie of cinemaThang.getMovies()">
+  <li>
+    <h3> {{movie.title}}</h3>
+    <p> {{movie.director}} </p>
+    <a [routerLink]="['/movie', movie.id]"> See Details </a>
+  </li>
+</ul>
