@@ -4,3 +4,9 @@
 <h3> {{ movieInfo.name }}</h3>
 
 <p> Industry: {{ movieInfo.director }}</p>
+
+<ul *ngFor="let actor of movieInfo.actors">
+  <li> {{ actor }} </li>
+</ul>
+
+<p> {{ movieInfo.year }}</p>
